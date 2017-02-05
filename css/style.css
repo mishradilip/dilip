@@ -823,6 +823,7 @@ a.selected-item:before, .side-menu a:hover:before {
 	margin-bottom: 40px;
 }
 .portfolio .img-wrapper {
+	height: 175px;
 	position: relative;
 	overflow: hidden;
 }
