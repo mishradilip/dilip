@@ -10,7 +10,7 @@ $errors = array();
     $to = 'dilip.mishra900@gmail.com'; 
     $subject = 'Message from Contact Us Form';
     
-	if (!$_POST['first_name']) {
+	if (!$_POST['name']) {
       $errors[] = 'Please enter your first name';
     }
     
@@ -24,7 +24,7 @@ $errors = array();
     }
     
     // Check if email has been entered and is valid
-    if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+    if (!$_POST['mail'] || !filter_var($_POST['mail'], FILTER_VALIDATE_EMAIL)) {
       $errors[] = 'Please enter your email address';
     }
     
